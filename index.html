@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Score Keeeper</title>
+
+  <!--Google font link-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <!--Bulma cdn-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
+  <!--Custom CSS Style Sheet-->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!--Main section-->
+  <section class="section">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-half is-offset-one-quarter">
+
+          <!--Card that containes all stuff-->
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-2by1">
+                <img
+                  src="https://images.unsplash.com/photo-1534158914592-062992fbe900?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2099&q=80"
+                  alt="">
+              </figure>
+            </div>
+            <header class="card-header">
+              <p class="card-header-title">
+                Ping Pong Score Keeper
+              </p>
+            </header>
+            <div class="card-content">
+              <div class="content">
+                <h1 class="title is-1"> <span class="plOneDisplay">0</span> to <span class="plTwoDisplay">0</span> </h1>
+                <p class="subtitle">Use the button below to keep score</p>
+
+                <label for="playto" class="label is-large  is-inline mx-2">Playing to</label>
+                <div class="select is-rounded">
+                  <select name="" id="playto">
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <footer class="card-footer">
+              <button class="button is-primary card-footer-item p1Button">+1 for player one</button>
+              <button class="button is-info card-footer-item p2Button">+2 for player one</button>
+              <button class="button is-danger card-footer-item" id="reset">Reset</button>
+            </footer>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!--Custom JavaScript-->
+  <script src="refactor.js"></script>
+</body>
+
+</html>
