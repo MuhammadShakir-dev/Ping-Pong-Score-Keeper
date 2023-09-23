@@ -72,8 +72,8 @@
 
     playerOne.display.textContent = playerOne.score;
     playerTwo.display.textContent = playerTwo.score;
-    playerOne.display.style.color = 'black';
-    playerTwo.display.style.color = 'black';
+    playerOne.display.classList.remove('winner','looser');
+    playerTwo.display.classList.remove('winner','looser');
 
     playerOne.button.disabled = false;
     playerTwo.button.disabled = false;
